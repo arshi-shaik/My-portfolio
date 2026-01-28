@@ -14,26 +14,27 @@ header {
   position: sticky;
   top: 0;
   background: #111;
-  color: #fff;
+  color: white;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
-header a {
+nav a {
   color: white;
-  text-decoration: none;
   margin-left: 20px;
+  text-decoration: none;
 }
 
-header a:hover {
+nav a:hover {
   color: #00bcd4;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   background: linear-gradient(to right, #2193b0, #6dd5ed);
   color: white;
   display: flex;
@@ -74,7 +75,8 @@ header a:hover {
 
 /* SECTIONS */
 section {
-  padding: 60px 40px;
+  padding: 80px 40px;
+  min-height: 100vh;
 }
 
 h2 {
