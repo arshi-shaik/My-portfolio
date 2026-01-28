@@ -44,14 +44,18 @@ nav a:hover {
   text-align: center;
 }
 
-.animate {
-  animation: fadeIn 2s ease;
+.hero h1 {
+  animation: slideFade 1.8s ease forwards;
 }
 
-@keyframes fadeIn {
+.hero p {
+  animation: slideFade 2.4s ease forwards;
+}
+
+@keyframes slideFade {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -67,6 +71,7 @@ nav a:hover {
   color: white;
   text-decoration: none;
   border-radius: 25px;
+  transition: background 0.3s;
 }
 
 .resume-btn:hover {
@@ -83,6 +88,33 @@ h2 {
   margin-bottom: 15px;
 }
 
+/* ABOUT */
+.about {
+  text-align: center;
+  background: #fff;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #555;
+  margin: 10px 0;
+}
+
+.facts {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.facts li {
+  margin: 8px 0;
+}
+
 /* SKILLS */
 .skills span {
   background: #eee;
@@ -93,13 +125,15 @@ h2 {
 
 /* GALLERY */
 .gallery {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 
 .gallery img {
-  width: 250px;
-  transition: transform 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
