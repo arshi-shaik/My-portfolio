@@ -25,7 +25,7 @@ JavaScript – for basic interactivity
 
 🔗 Live Website
 👉 Visit my portfolio here:
-https://arshi-shaik.github.io/portfolio/
+https://arshi-shaik.github.io/My portfolio/
 
 📄 Resume
 📥 Download my resume here:
